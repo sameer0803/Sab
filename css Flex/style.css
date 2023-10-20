@@ -1,0 +1,50 @@
+body{
+   text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border:2px solid black;
+}
+#container{
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;   
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    
+
+}
+#box1{
+    background-color: aqua;
+   align-self: center;
+   
+    
+}
+#box2{
+    background-color: pink;
+    align-self: flex-end;
+    
+    
+}
+#box3{
+    background-color: grey;
+    
+}
+#box4{
+    background-color: red;
+    align-self: last baseline;
+   
+   
+}
+#box5{
+    background-color: purple;
+    align-self: self-end;
+    
+}
+
