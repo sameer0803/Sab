@@ -33,6 +33,9 @@ text-align --> right,left,center
 text-decoration---> underline,overline.line-through
 font-weight  --->normal,Bold,bolder,lighter,100-900
 font-size--->16px(bydefault)--> 96px --> 1 inch
+
+
+
 font-family ---> arial,Cursive
 line-height-
 text-transform: Uppercase,Lowercase,capitalise;
