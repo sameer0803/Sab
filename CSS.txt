@@ -1,0 +1,211 @@
+CSS
+
+Inline ---> line ke andar 
+internal/Embedded ---> style
+External--> link  ke through ---> ek alag file banti hai .css .
+---------------------------------------------------------------------------------------------------
+Selectors
+property
+value
+
+example:-
+h1{
+ color:red;
+ }
+ 
+ h1--> selectors
+ color--> property
+ red--> value
+----------------------------------------------------------------------------------------------------
+Selectors :-
+4 Types 
+
+universal-->*
+element--> h1
+id --> #
+class --> .
+---------------------------------------------------------------------------------------------------
+Property and Value:-
+
+Text Properties:-
+
+text-align --> right,left,center
+text-decoration---> underline,overline.line-through
+font-weight  --->normal,Bold,bolder,lighter,100-900
+font-size--->16px(bydefault)--> 96px --> 1 inch
+font-family ---> arial,Cursive
+line-height-
+text-transform: Uppercase,Lowercase,capitalise;
+----------------------------------------------------------------------------------------------------
+
+Box model in css:-
+
+height:10px;
+Height ----only for content part
+width ----only for content part
+Border ----- 
+			border-width: 3px;
+			border-style: double;
+			border-color: black;
+			
+border shorthand --- 
+border :3px,double,black;
+border-radius:100px;-->50% ---> covert it into circle 
+
+Padding:-
+
+	padding-left:100px;
+    padding-top:100px;
+    padding-bottom:100px;
+    padding-right:100px;
+	padding: 100px 200px 300px 400px;
+	
+	
+Margin:- box khiskaane ke liye.....
+
+margin: 100px 200px 300px 400px;
+
+------------------------------------------------------------------------------------------------------
+
+Display property in CSS:- 
+display: inline
+
+inline ---> takes only that space trquired by the element (no margin /no padding) --> span,button,anchor tag,input
+block --> Takes full space available in width  ---> div ,heading
+inline-block --> takes only that space required by the element but we can set margin and padding 
+none--> To remove element from the block ----> there will be no space
+
+visibility :hidden---> It will acquire that much space
+
+Alpha channel
+
+color ----> opacity decide krta hai --> 
+Rgba --->red green blue alpha  (0 to 1) 
+--------------------------------------------------------------------------------------------------------
+
+Units in CSS 
+
+top:10px;
+absolute and Relative
+
+absolute ---> px ,cm,kilometer,
+Relative ---> percentage, em ,rem
+
+
+ parent to child
+percentage --->{ for all}
+em ---> 
+Font--- example --> 2 em ---> parent se child two times ho jaayega 
+font size of the element itself  within same box.---->width -- em -->
+
+rem :- Root em--- Jo sabse bahar jo element hai na uske ---> uske font size ke hisab se ---> html ke ---> by default --16 px
+
+vh --view port height  ---> relative to 1% of view port(screen Size) height
+vw --view port width   ---> relative to 1% of view port width
+
+-----------------------------------------------------------------------------------------------------
+
+Position:-
+position:-static
+
+Static :- By default every tag is static and here we cant apply property like top,bottom,left ,right 
+Relative :- It is relative to itself in its initialised position .---> we can apply top,bottom,left ,right
+absolute :- It is relative to browser always ---> we can apply top,bottom,left ,right
+fixed :- It get fixed for all time ---> we can apply top,bottom,left ,right
+sticky : It get fixed when in scrolling it comes to top ---> we can apply top,bottom,left ,right
+
+z index --- More the priority more it will be come on each other 
+top
+left
+right
+bottom
+----------------------------------------------------------------------------------------------------------
+CSS Flex :-- flexible box layout
+
+display :flex;
+- Flexible Box Layout:-
+It is one dimensional layout method for arranging items in rows and columns.
+
+
+It tells how flex items are placed in the flex container:-
+
+Parent me lagta hai to child boxes pr apply hota hai 
+
+1)flexbox-direction
+
+4 types:- row,row-reverse,column,column-reverse
+flexbox-direction :row(bydefault)
+row --> main-axis--->  left se right, cross axis-->90 degree
+row reverse ---> main-axis--->right se left
+column --> main-axis--->  top to bottom
+column-reverse -->main-axis--->  bottom to top.
+
+Parent me lagta hai to child boxes pr apply hota hai 
+
+2)flexbox-properties
+
+4 types:- justify-content, flex-wrap,align-items,align-content
+
+A)
+justify-content:- alignment along the main axis :-
+ flex-start
+ flex-end
+ center
+ space-evenly 
+ 
+ B)align-items:- baseline,center   
+ Note:-
+Jab flexbox-direction---> row hai to main axis left to right hai ---> to align-items --> cross-axis ho jaayega ---> 90 degree-->top to bottom
+Jab flexbox-direction---> row-reverse hai to main axis right to left hai ---> to align-items --> cross-axis ho jaayega ---> 90 degree-->bottom to top
+Jab flexbox-direction---> column hai to main axis top to bottom hai ---> to align-items --> cross-axis ho jaayega ---> 90 degree-->left to right
+Jab flexbox-direction---> column reverse hai to main axis bottom to top hai ---> to align-items --> cross-axis ho jaayega ---> 90 degree-->right to left
+
+C)Flex-wrap:- We can wrap up the elements of div :- in wrap--->properties if div like height and width will not adjust ---> it will shift into diffrent line with the same properties.
+
+D) align-content:alignment of space between and around the content along cross-axis
+
+------------------------------------------------------------------------------------------------------------------
+
+ye child ke boxes me lagta hai 
+
+align-self:-kisi box ko move karane ke liye particulary ---> center,baselione,flex-start,flex-end,
+flex-shrink:2   --->(2 times shrink)
+flex-grow: jitni bhi space  bachti hai mainn container me ...sare box lene ke baad----to jahan ye lgega ye uski sari space le leta hai ---
+ flex-grow 2 div me ek sath bhi lagao to ek div 2 se dusra 1 se to ---> 2 times space le lega.
+------------------------------------------------------------------------------------------------------------------
+
+
+Media Query :-
+
+It helps to create responsive Website ---->
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Level 5 :- 
+
+Transitions :- from state to another state ---> Normal to active 
+active state---> Jab uspr click krte hain .
+
+
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+
+Shorthand me aise likhenge 
+transition: all 2s easein 0.2s
+
+-----------------------------------------------------------------------------------------------------------------------
+CSS transform:-
+ 
+trasnsform:-
+
+transform: <below properties>
+1) rotate (45 degree) ---> rotate X ,Y and Z
+2)scale(X,Y) --> ex:- ttransform:scaleX(2) --> two times x axis---> kuch nhi denge to dono me badha hoga...
+3)translate --> move krte hain isse
+4)skew-->corner se pkdkr kheench diya.
+
+Extra:-
+-----------------------------------------------------------------------------------------------------------------------
